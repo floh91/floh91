@@ -7,7 +7,7 @@ module.exports = (_db)=>{
 class BeerModel {
     //récupération des bières
     static getAllBeers() {
-        return db.query('SELECT * FROM `beers`')
+        return db.query('SELECT * FROM beers')
             .then((response)=>{
                 return response;
             })
